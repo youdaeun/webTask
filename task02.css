@@ -1,0 +1,165 @@
+body {
+  background-color: rgb(253, 252, 252);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px;
+}
+nav {
+  background-color: black;
+  margin-left: 10px;
+}
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline-block;
+}
+nav a {
+  color: white;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  width: 20px;
+}
+.home {
+  background-color: darkorange;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+  z-index: 2;
+}
+
+.home a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px 16px;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  color: white;
+  margin: 4px;
+  padding: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  z-index: 5;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: azure;
+}
+
+.dropdown-menu:hover:not(.home) {
+  background-color: greenyellow;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+main {
+  color: black;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+}
+
+.total,
+.introduce {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 1000px;
+  z-index: 1;
+}
+section {
+  width: 100%;
+  height: 100%;
+  margin-top: -30px;
+}
+.image {
+  background-color: rgb(206, 188, 186);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+aside {
+  width: 100%;
+  color: black;
+  position: relative;
+  margin-top: 40px;
+}
+
+.comments {
+  height: 80%;
+  width: 100%;
+}
+
+.commets-article,
+.popular-content,
+.follow {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+.aside-image {
+  background-color: rgb(206, 188, 186);
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* 반응형 웹 설정, 폭이 400px 이하인 경우 네비게이션 바가 보이지 않도록 설정
+  [참고] screen and (max-width : 400px)*/
+@media screen and (max-width: 400px) {
+  nav {
+    display: none;
+  }
+}

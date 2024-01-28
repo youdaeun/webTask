@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../day09/task01.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#home" class="home_logo">
+          <img class="header-image" src="./../img/soomgo.png" alt="숨고로고" />
+        </a>
+        <nav class="user-menu">
+          <a href="#" class="nav-item">견적요청</a>
+          <a href="#" class="nav-item">고수찾기</a>
+          <a href="#" class="nav-item">마켓</a>
+          <a href="#" class="nav-item">커뮤니티</a>
+        </nav>
+        <form class="search-form">
+          <input
+            type="text"
+            name="text"
+            placeholder="     어떤 서비스가 필요하세요?"
+          />
+        </form>
+        <div class="sign-container">
+          <a href="#login" class="login-link">로그인</a>
+          <a href="#sign" class="signup-link">회원가입</a>
+          <a href="#sign" class="sign-btn">고수가입</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <img src="./../img/banner.png" alt="banner" />
+      </div>
+      <div class="category-container">
+        <ul class="category-item">
+          <li>
+            <a href="#이사">
+              <div>
+                <img src="./../img/car" />
+              </div>
+              <p class="category-title">이사/청소</p>
+            </a>
+          </li>
+          <li>
+            <a href="#설치/수리">
+              <div>
+                <img src="./../img/setting.png" />
+              </div>
+              <p class="category-title">설치/수리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#인테리어">
+              <div>
+                <img src="./../img/interior.png" />
+              </div>
+              <p class="category-title">인테리어</p>
+            </a>
+          </li>
+          <li>
+            <a href="#외주">
+              <div>
+                <img src="./../img/bag.png" />
+              </div>
+              <p class="category-title">외주</p>
+            </a>
+          </li>
+          <li>
+            <a href="#이벤트">
+              <div>
+                <img src="./../img/calendar.png" />
+              </div>
+              <p class="category-title">이벤트/뷰티</p>
+            </a>
+          </li>
+          <li>
+            <a href="#취업/직무">
+              <div>
+                <img src="./../img/pencil.png" />
+              </div>
+              <p class="category-title">취업/직무</p>
+            </a>
+          </li>
+          <li>
+            <a href="#과외">
+              <div>
+                <img src="./../img/study.png" />
+              </div>
+              <p class="category-title">과외</p>
+            </a>
+          </li>
+          <li>
+            <a href="#취미/자기계발">
+              <div>
+                <img src="./../img/art.png" />
+              </div>
+              <p class="category-title">취미/자기계발</p>
+            </a>
+          </li>
+          <li>
+            <a href="#자동차">
+              <div>
+                <img src="./../img/car2.png" />
+              </div>
+              <p class="category-title">자동차</p>
+            </a>
+          </li>
+          <li>
+            <a href="#법률/금융">
+              <div>
+                <img src="./../img/vector.png" />
+              </div>
+              <p class="category-title">법률/금융</p>
+            </a>
+          </li>
+          <li>
+            <a href="#기타">
+              <div>
+                <img src="./../img/shirt.png" />
+              </div>
+              <p class="category-title">기타</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-service-container">
+        <h2 class="main-service-title">숨고 인기 서비스</h2>
+        <div class="services-wrapper">
+          <div class="service-card">
+            <img src="./../img/piano.jfif" alt="피아노 레슨" height="310px" />
+            <p class="service-card-title">피아노/키보드 레슨</p>
+            <p class="service-count">222,033명 요청</p>
+          </div>
+          <div class="service-card">
+            <img src="./../img/golf.jfif" alt="골프 레슨" height="310px" />
+            <p class="service-card-title">골프 레슨</p>
+            <p class="service-count">345,013명 요청</p>
+          </div>
+          <div class="service-card">
+            <img src="./../img/pt.jfif" alt="퍼스널 트레이닝(PT)" />
+            <p class="service-card-title">퍼스널트레이닝(PT)</p>
+            <p class="service-count">628,100명 요청</p>
+          </div>
+          <div class="service-card">
+            <img src="./../img/song.jfif" alt="보컬 레슨" />
+            <p class="service-card-title">보컬 레슨</p>
+            <p class="service-count">412,711명 요청</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-popular-pro">
+        <section class="popular-header">
+          <h2 class="title">지금 인기 있는 고수</h2>
+          <a href="#" class="all-profiles-link">전체보기</a>
+        </section>
+        <section class="chip-container">
+          <button type="button" class="chip"><span>수영/홈트</span></button>
+          <button type="button" class="chip"><span>원데이 클래스</span></button>
+          <button type="button" class="chip"><span>맛집 탐방</span></button>
+          <button type="button" class="chip"><span>사진 촬영</span></button>
+        </section>
+        <div class="profiles-container">
+          <div class="profile-card-1">
+            <a class="card-list">
+            <div class="profile-card">
+                  <div>
+                  <img src="./../img/profile.jpg" alt="고수 프로필 이미지" class="profile-img"/>
+                  </div>
+                  <div class="profile-info">
+                  <span class="profile-name-1">2,306명</span>
+                  <span class="profile-name-1-1" color="blue">의</span>
+                  <br />
+                  <div>
+                    <span class="profile-description">고수 만나보기</span>
+                    <img src="" />
+                  </div>
+                  
+            </div>
+            </div>
+          <div class="profile-card">
+            <a href="/profile/users/1">
+              <div class="profile-card">
+                <section class="card-header">
+                  <div>
+                  <img src="./../img/profile1.jpg" alt="고수 프로필 이미지" class="profile-img" />
+                  </div>
+                  <div>
+                    <section class="profile-reviews">
+                      <span class="rating">4.9</span>
+                      <span class="star-icon">⭐</span>
+                    </section>
+                  </div>
+                </section>
+                  <p class="profile-name">
+                    ✔️이담✔️- ✅친절·신속·정확·화물·용달✅
+                  </p>
+                  <section class="profile-details">
+                    <span class="chip-pay">
+                      <img
+                        src="https://soomgo.com/?utm_source=google&utm_medium=cpc&utm_campaign=%EB%A9%94%EC%9D%B8&utm_content=%EB%A9%94%EC%9D%B8&utm_term=%EC%88%A8%EA%B3%A0&gad_source=1&gclid=EAIaIQobChMIlrnXlLrzgwMV4tUWBR1eLw2OEAAYASAAEgJLBPD_BwE"
+                        alt="숨고페이아이콘"
+                      />
+                      <span> 숨고페이</span>
+                    </span>
+                  </section>
+                  <section "sub-info">
+                  <span class="profile-requests">경력3년</span>
+                  <span class="profile-requests">· 평균 10분 내 응답</span>
+                </section>
+              </div>
+            </a>
+          </div>
+        </div>
+              <div class="profile-card">
+                <a href="/profile/users/2">
+                  <div class="profile-card">
+                    <section class="card-header">
+                      <div>
+                       <img src="./../img/profile2.jpg" alt="고수 프로필 이미지" class="profile-img"/>
+                      </div>
+                      <div>
+                        <section class="profile-reviews">
+                          <span class="rating">4.8</span>
+                          <span class="star-icon">⭐</span>
+                        </section>
+                      </div>
+                    </section>
+                    <p class="profile-name">김서방</p>
+                      <section>
+                        <span class="chip-pay">
+                          <img
+                              src="https://soomgo.com/?utm_source=google&utm_medium=cpc&utm_campaign=%EB%A9%94%EC%9D%B8&utm_content=%EB%A9%94%EC%9D%B8&utm_term=%EC%88%A8%EA%B3%A0&gad_source=1&gclid=EAIaIQobChMIlrnXlLrzgwMV4tUWBR1eLw2OEAAYASAAEgJLBPD_BwE"
+                              alt="숨고페이아이콘"
+                          />
+                          <span> 숨고페이</span>
+                        </span>
+                      </section>
+                      <section "sub-info">
+                        <span class="profile-requests">경력3년</span>
+                        <span class="profile-requests">· 평균 10분 내 응답</span>
+                      </section>
+                  </div>
+                </a>
+              </div>
+              <div class="profile-card">
+                <a href="/profile/users/4">
+                  <div class="profile-card">
+                    <section class="card-header">
+                      <div>
+                        <img src="./../img/profile4.jpg" alt="고수 프로필 이미지" class="profile-img" />
+                      </div>
+                      <div>
+                        <section class="profile-reviews">
+                          <span class="rating">4.8</span>
+                          <span class="star-icon">⭐</span>
+                        </section>
+                      </div>
+                    </section>
+                    <p class="profile-name">모서방</p>
+                    <section>
+                      <span class="chip-pay">
+                        <img
+                            src="https://soomgo.com/?utm_source=google&utm_medium=cpc&utm_campaign=%EB%A9%94%EC%9D%B8&utm_content=%EB%A9%94%EC%9D%B8&utm_term=%EC%88%A8%EA%B3%A0&gad_source=1&gclid=EAIaIQobChMIlrnXlLrzgwMV4tUWBR1eLw2OEAAYASAAEgJLBPD_BwE"
+                            alt="숨고페이아이콘"
+                        />
+                        <span> 숨고페이</span>
+                      </span>
+                    </section>
+                    <section "sub-info">
+                      <span class="profile-requests">경력3년</span>
+                      <span class="profile-requests">· 평균 10분 내 응답</span>
+                    </section>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      <div class="banner2">
+        <a
+          href="https://soomgo.com/app-download/sender?c=%EB%A9%94%EC%9D%B8&pid=google&af_sub4=mainbanner&af_channel=cpc&af_keywords=%EC%88%A8%EA%B3%A0&af_sub2=%EB%A9%94%EC%9D%B8"
+        >
+          <img src="./../img/banner2.jpg" />
+        </a>
+      </div>
+      <div class="exhibition-item">
+        <h2 class="title-1">쓱싹쓱싹 청소하는 날</h2>
+        <div class="exhibition-slider">
+          <div class="slide-item">
+            <img src="./../img/clean-consulting.jpg" alt="정리수납 컨설팅" />
+            <p class="service-name">정리수납 컨설팅</p>
+          </div>
+          <div class="slide-item">
+            <img src="./../img/moving-cleaning.jpg" alt="이사/입주 청소업체" />
+            <p class="service-name">이사/입주 청소업체</p>
+          </div>
+          <div class="slide-item">
+            <img src="./../img/storage.jpg" alt="짐 보관" />
+            <p class="service-name">짐 보관</p>
+          </div>
+          <div class="slide-item">
+            <img
+              src="./../img/heater-cleaning.jpg"
+              alt="온풍기/냉난방기 청소"
+            />
+            <p class="service-name">온풍기/냉난방기 청소</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="contact-info">
+          <div class="text-contact-container-1">
+            <div class="text-contact-ct1">
+              <p class="text-contact">1599-5319</p>
+              <p class="text-middle">
+                평일 10:00 - 18:00
+                <br />
+                (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)
+              </p>
+
+              <div class="store-buttons">
+                <a
+                  class="download_appstore"
+                  href="https://soomgo.com/app-download/sender?c=%EB%A9%94%EC%9D%B8&pid=google&af_sub4=footer&af_channel=cpc&af_keywords=%EC%88%A8%EA%B3%A0&af_sub2=%EB%A9%94%EC%9D%B8"
+                >
+                  <img
+                    src="./../img/apple.png"
+                    alt="앱스토어"
+                    class="app_store"
+                  />APP STORE
+                </a>
+                <a
+                  class="download_playstore"
+                  href="https://soomgo.com/app-download/sender?c=%EB%A9%94%EC%9D%B8&pid=google&af_sub4=footer&af_channel=cpc&af_keywords=%EC%88%A8%EA%B3%A0&af_sub2=%EB%A9%94%EC%9D%B8"
+                >
+                  <img
+                    src="./../img/playstore.png"
+                    alt="플레이스토어"
+                    class="play_store"
+                  />PLAY STORE
+                </a>
+              </div>
+            </div>
+            <div class="col-content-right-1">
+              <ul class="content-list">
+                <div class="open-padding-container">
+                  <div class="open-padding-1">
+                    <li class="open-padding">
+                      <span class="text-middle-title-category">숨고소개</span>
+                      <div class="list-1">
+                        <a href="/about" class="text-middle-category"
+                          >회사소개</a
+                        >
+                        <a href="/carrer" class="text-middle-category"
+                          >채용안내</a
+                        >
+                        <a rhef="/blog" class="text-middle-category"
+                          >팀블로그</a
+                        >
+                      </div>
+                    </li>
+                  </div>
+                  <div class="open-padding-2">
+                    <li class="open-padding">
+                      <span class="text-middle-title-category">고객안내</span>
+                      <div class="list-2">
+                        <a href="/how-it-works" class="text-middle-category"
+                          >이용안내</a
+                        >
+                        <a href="/safety" class="text-middle-category"
+                          >안전정책</a
+                        >
+                        <a href="/prices" class="text-middle-category"
+                          >예상금액</a
+                        >
+                        <a href="/search" class="text-middle-category"
+                          >고수찾기</a
+                        >
+                        <a href="/articles" class="text-middle-category"
+                          >숨고보증</a
+                        >
+                        <a href="/articles/ask" class="text-middle-category"
+                          >고수에게 묻다</a
+                        >
+                      </div>
+                    </li>
+                  </div>
+                  <div class="open-padding-3">
+                    <li class="open-padding">
+                      <span class="text-middle-title-category">고수안내</span>
+                      <div class="list-3">
+                        <a
+                          href="/article/how-it-works"
+                          class="text-middle-category"
+                          >이용안내</a
+                        >
+                        <a href="/article/gudie" class="text-middle-category"
+                          >고수가이드</a
+                        >
+                        <a href="/article/sign" class="text-middle-category"
+                          >고수가입</a
+                        >
+                        <a href="/article/center" class="text-middle-category"
+                          >고수센터</a
+                        >
+                      </div>
+                    </li>
+                  </div>
+                  <div class="open-padding-4">
+                    <li class="open-padding">
+                      <span class="text-middle-title-category">고객센터</span>
+                      <div class="list-4">
+                        <a href="/board" class="text-middle-category"
+                          >공지사항</a
+                        >
+                        <a href="/askes" class="text-middle-category"
+                          >자주묻는질문</a
+                        >
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="col-content-right">
+            <div class="term-container">
+              <div class="term-group">
+                <a href="#" class="term-group-content">이용약관</a>
+                <a href="#" class="term-group-content">개인정보처리방침</a>
+              </div>
+              <div class="term-group1">
+                <a href="#" class="term-group-content"
+                  >위치기반 서비스 이용약관</a
+                >
+                <a href="#" class="term-group-content">사업자 정보확인</a>
+              </div>
+            </div>
+            <div class="content-list-term">
+              <span class="text-term-text">
+                (주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가
+                아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과
+                관련한 의무와 책임은 거래당사자에게 있습니다.
+              </span>
+              <ul class="content-guide">
+                <li class="text">
+                  상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H ·
+                  개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로
+                  415, L7 강남타워 5층
+                </li>
+                <li class="text">
+                  사업자등록번호:120-88-22325 · 통신판매업신고증:제
+                  2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제
+                  2019-21호
+                </li>
+                <li class="text">
+                  고객센터:1599-5319 · 이메일:support@soomgo.com
+                </li>
+                <li class="text">
+                  Copyright ©Brave Mobile Inc. All Rights Reserved.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-container">
+              <div class="col-content_badge-list">
+                <a
+                  href="https://www.facebook.com/SoomgoKorea/"
+                  target="_blank"
+                  class="footer-badge"
+                >
+                  <img
+                    src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-facebook.svg"
+                    alt="숨고 페이스북 계정"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/soomgo_official/"
+                  target="_blank"
+                  class="footer-badge"
+                >
+                  <img
+                    src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-instagram.svg"
+                    alt="숨고 인스타그램"
+                  />
+                </a>
+                <a
+                  href="https://blog.naver.com/brave_mobile_mkt/"
+                  target="_blank"
+                  class="footer-badge"
+                >
+                  <img
+                    src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverblog.svg"
+                    alt="숨고 블로그"
+                  />
+                </a>
+                <a
+                  href="https://post.naver.com/brave_mobile_mkt?isHome=1"
+                  target="_blank"
+                  class="footer-badge"
+                >
+                  <img
+                    src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-naverpost.svg"
+                    alt="숨고 포스트"
+                  />
+                </a>
+                <a
+                  href="https://news.soomgo.com"
+                  target="_blank"
+                  class="footer-badge"
+                >
+                  <img
+                    src="https://assets.cdn.soomgo.com/icons/icon-footer-sns-tistory.svg"
+                    alt="숨고 스토리"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
